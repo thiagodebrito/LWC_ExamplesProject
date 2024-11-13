@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Data Table with Modal">
+        <lightning-datatable
+            key-field="id"
+            data={data}
+            columns={columns}
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card>    
+    <c-modal-example
+        is-open={isModalOpen}
+        modal-title={modalTitle}
+        modal-content={modalContent}
+        onclose={handleModalClose}>
+    </c-modal-example>
+</template>
